@@ -60,7 +60,7 @@ RSpec.describe Event, type: :model do
     end
 
     describe "#location" do
-      it { expect(@event).to validate_presence_of(:description) }
+      it { expect(@event).to validate_presence_of(:location) }
     end
   end
 
