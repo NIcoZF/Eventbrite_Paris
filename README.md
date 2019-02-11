@@ -1,24 +1,48 @@
-# README
+# THP Semaine 6 Jour 1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Projet: Eventbrite_Paris
 
-Things you may want to cover:
 
-* Ruby version
+## Sur Slack :
 
-* System dependencies
+* slack/  @Gauthier :dolphin:
+* slack  @Nico :chicken:
 
-* Configuration
 
-* Database creation
+## Etapes d'utilisation :
 
-* Database initialization
+### La version hébergée localement
 
-* How to run the test suite
+**Pour te permettre de tester le bon fonctionnement du projet suit les étapes suivantes :**
 
-* Services (job queues, cache servers, search engines, etc.)
+_Fait un git clone depuis ton terminal_
 
-* Deployment instructions
+Ensuite :
+```
+   $> bundle install
+```
+Ensuite :
+```
+   $> rails db:create
+```
 
-* ...
+Ensuite :
+```
+   $> rails db:migrate
+```
+
+Ensuite :
+```
+   $> rails db:seed
+```
+Ensuite :
+```
+   $> rails console
+```
+Enfin :
+
+**Une fois ces étapes passées, **
+
+### La version en production
+
+  *Rendez-vous sur <http://www.yopmail.com/>*
