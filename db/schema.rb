@@ -16,7 +16,6 @@ ActiveRecord::Schema.define(version: 2019_02_11_115928) do
   enable_extension "plpgsql"
 
   create_table "attendances", force: :cascade do |t|
-    t.string "stripe_customer_id"
     t.bigint "attendee_id"
     t.bigint "event_id"
     t.datetime "created_at", null: false
