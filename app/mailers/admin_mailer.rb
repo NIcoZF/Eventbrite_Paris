@@ -2,7 +2,7 @@ class AdminMailer < ApplicationMailer
   default from: 'no-reply@monsite.fr'
  
   def new_attendance_email(attendance)
-    #on récupère l'instance user pour ensuite pouvoir la passer à la view en @user
+    
     @admin = attendance.event.admin
     @attendee = attendance.attendee.first_name
     @event = attendance.event.title
