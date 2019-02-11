@@ -29,7 +29,9 @@ RSpec.describe Event, type: :model do
     end
     
     describe "#duration" do
-		  it { expect(@event).to validate_presence_of(:duration) }
+      it { expect(@event).to validate_presence_of(:duration) }
+      it { is_expected.to_not allow_value(2.5).for(:duration) }
+      it { is_expected.to_not allow_value(-5).for(:duration) }
     end
 =begin
     describe "multiple_of_5" do
